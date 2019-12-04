@@ -29,10 +29,4 @@ defmodule Day1Test do
       assert Day1.total_fuel_checker([12, 14, 1969, 100756]) == 34241
     end
   end
-
-  describe "total_fuel_check_from_file" do
-    test "it calculates correct total fuel required given file with list of spacecraft masses" do
-      assert Day1.total_fuel_check_from_file("#{current_folder}/day1_test_file1.txt") == 34241
-    end
-  end
 end

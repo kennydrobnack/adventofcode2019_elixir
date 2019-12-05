@@ -34,8 +34,12 @@ defmodule Day4Test do
       assert Day4.password_validator(111123) == true
     end
 
-    test "it says 135679 is invalid" do
+    test "it says 135679 is invalid - no double" do
       assert Day4.password_validator(135679) == false
+    end
+
+    test "it says 135449 is invalid - double with descending number in the middle" do
+      assert Day4.password_validator(135449) == false
     end
   end
 end

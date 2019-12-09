@@ -40,11 +40,11 @@ defmodule Day8Test do
 
   describe "layer_with_least_of_digit" do
     test "it figures out which layer has the least of a digit" do
-      assert Day8.layer_with_least_of_digit(["780002", "12345"], 0) == 1
+      assert Day8.layer_with_least_of_digit(["780002", "12345"], 0) == 2
     end
 
     test "it figures out which layer has the least of a digit with a bigger list" do
-      assert Day8.layer_with_least_of_digit(["1", "2", "22222"], 2) == 2
+      assert Day8.layer_with_least_of_digit(["1111", "200", "22222"], 2) == 1
     end
   end
 end

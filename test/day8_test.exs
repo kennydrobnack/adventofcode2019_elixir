@@ -38,13 +38,13 @@ defmodule Day8Test do
     end
   end
 
-  describe "layer_with_most_of_digit" do
-    test "it figures out which layer has the most of a digit" do
-      assert Day8.layer_with_most_of_digit(["780002", "12345"], 0) == 1
+  describe "layer_with_least_of_digit" do
+    test "it figures out which layer has the least of a digit" do
+      assert Day8.layer_with_least_of_digit(["780002", "12345"], 0) == 1
     end
 
-    test "it figures out which layer has the most of a digit with a bigger list" do
-      assert Day8.layer_with_most_of_digit(["780002", "12345", "22222"], 2) == 3
+    test "it figures out which layer has the least of a digit with a bigger list" do
+      assert Day8.layer_with_least_of_digit(["1", "2", "22222"], 2) == 2
     end
   end
 end

@@ -31,4 +31,10 @@ defmodule Day8Test do
       assert Day8.image_size(25, 6) == 150
     end
   end
+
+  describe "count_digits_in_layer" do
+    test "it counts number of occurances of a digit per layer" do
+      assert Day8.count_digits_in_layer("0123", 0) == 1
+    end
+  end
 end

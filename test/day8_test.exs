@@ -34,7 +34,17 @@ defmodule Day8Test do
 
   describe "count_digits_in_layer" do
     test "it counts number of occurances of a digit per layer" do
-      assert Day8.count_digits_in_layer("0123", 0) == 1
+      assert Day8.count_digits_in_layer("0023", 0) == 2
+    end
+  end
+
+  describe "layer_with_most_of_digit" do
+    test "it figures out which layer has the most of a digit" do
+      assert Day8.layer_with_most_of_digit(["780002", "12345"], 0) == 1
+    end
+
+    test "it figures out which layer has the most of a digit with a bigger list" do
+      assert Day8.layer_with_most_of_digit(["780002", "12345", "22222"], 2) == 3
     end
   end
 end
